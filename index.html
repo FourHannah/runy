@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <img id = "hlavni-obrazek" src="učebna1.png" width="727" height="572" alt="Místnost" usemap="#mistnost-map">
+        <map name="mistnost-map">
+            <area shape="rect" coords="218, 420, 280, 465" href="#" id="zmena-obrazku6"> <!--červený sešit-->
+            <!--<area shape="rect" coords="390, 437, 465, 497" href="https://fourhannah.github.io/rain/"> Tohle taky použijeme na druhé hlavní stránce (modrý sešit)-->
+            <!--<area shape="rect" coords="407, 167, 528, 294" href="https://carl.gg/"> Tohle oužijeme na druhé stránce hlavní stránce (tabule)-->
+            <area shape="rect" coords="223, 219, 299, 232" href="#" id="zmena-obrazku1">
+            <area shape="rect" coords="224, 203, 237, 219" href="#" id="zmena-obrazku2">
+            <area shape="rect" coords="218, 191, 230, 205" href="#" id="zmena-obrazku3">
+            <area shape="rect" coords="208, 188, 218, 204" href="#" id="zmena-obrazku4">
+            <area shape="rect" coords="197, 194, 208, 209" href="#" id="zmena-obrazku5">
+            <area shape="rect" coords="444, 361, 492, 393" href="jpg2pdf (1).pdf"> 
+            
+           
+        </map>
+    </div>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const oblast1 = document.getElementById('zmena-obrazku1');
+            const oblast2 = document.getElementById('zmena-obrazku2');
+            const oblast3 = document.getElementById('zmena-obrazku3');
+            const oblast4 = document.getElementById('zmena-obrazku4');
+            const oblast5 = document.getElementById('zmena-obrazku5');
+            const oblast6 = document.getElementById('zmena-obrazku6');
+            const hlavniObrazek = document.getElementById('hlavni-obrazek');
+
+            oblast1.addEventListener('click', function () {
+                // Změňte obrázek na první obrázek
+                hlavniObrazek.src = 'učebnaq.png';
+            });
+
+            oblast2.addEventListener('click', function () {
+                // Změňte obrázek na druhý obrázek
+                hlavniObrazek.src = 'učebnax.png';
+            });
+            oblast3.addEventListener('click', function () {
+                // Změňte obrázek na druhý obrázek
+                hlavniObrazek.src = 'učebnay.png';
+            });
+            oblast4.addEventListener('click', function () {
+                // Změňte obrázek na druhý obrázek
+                hlavniObrazek.src = 'učebnaf.png';
+            });
+            oblast5.addEventListener('click', function () {
+                // Změňte obrázek na druhý obrázek
+                hlavniObrazek.src = 'učebnaj.png';
+            });
+            oblast6.addEventListener('click', function () {
+                // Změňte obrázek na první obrázek
+                hlavniObrazek.src = 'učebnam.png';
+            });
+        });
+    </script>
+    
+
+</body>
+</html>
